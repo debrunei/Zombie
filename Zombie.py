@@ -134,7 +134,24 @@ class Zombie(pygame.sprite.Sprite):
             # Dying
             self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
                 "assets/images/zombie/girl/dead/Dead (1).png"), (64, 64)))
-            # TODO: repeat for Dead (2).png through Dead (10).png
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (2).png"), (64, 64)))
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (3).png"), (64, 64)))
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (4).png"), (64, 64)))
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (5).png"), (64, 64)))
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (6).png"), (64, 64)))
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (7).png"), (64, 64)))
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (8).png"), (64, 64)))
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (9).png"), (64, 64)))
+            self.die_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (10).png"), (64, 64)))
 
             for sprite in self.die_right_sprites:
                 self.die_left_sprites.append(pygame.transform.flip(sprite, True, False))
@@ -142,8 +159,24 @@ class Zombie(pygame.sprite.Sprite):
             # Rising
             self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
                 "assets/images/zombie/girl/dead/Dead (10).png"), (64, 64)))
-            # TODO: repeat for Dead (9).png through Dead (1).png:
-            # TODO: HINT:  YOU NEED TO ASSIGN these counting down from 9 to 1 as you add them to the list.
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (9).png"), (64, 64)))
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (8).png"), (64, 64)))
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (7).png"), (64, 64)))
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (6).png"), (64, 64)))
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (5).png"), (64, 64)))
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (4).png"), (64, 64)))
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (3).png"), (64, 64)))
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (2).png"), (64, 64)))
+            self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
+                "assets/images/zombie/girl/dead/Dead (1).png"), (64, 64)))
 
             for sprite in self.rise_right_sprites:
                 self.rise_left_sprites.append(pygame.transform.flip(sprite, True, False))
@@ -151,39 +184,44 @@ class Zombie(pygame.sprite.Sprite):
         # Load an image and get rect
         self.direction = random.choice([-1, 1])
 
-        #TODO: create self.current_sprite variable and assign 0 to it.
-        #TODO: check if self.direction is -1.  If so assign self.walk_left_sprites[self.current_sprite] to self.image
-        #TODO: else:  assign self.walk_right_sprites[self.current_sprite] to self.image.
+        self.current_sprite = 0
+        if self.direction == -1:
+            self.walk_left_sprites[self.current_sprite] = self.image
+        else:
+            self.walk_right_sprites[self.current_sprite] = self.image
 
-        #TODO: assign self.image.get_rect() to self.rect.
-        #TODO: assign to self.rect.bottomleft the values of (random.randint(100, self.WINDOW_WIDTH - 100), -100)
+
+        self.rect = self.image.get_rect()
+        self.rect.bottomleft = (random.randint(100, self.WINDOW_WIDTH - 100), -100)
 
         # Attach sprite groups
-        #TODO: create a self.platform_group variable and assign platform_group to it.
-        #TODO: create a self.portal_group variable and assign portal_group to it.
+        self.platform_group = platform_group
+        self.portal_group = portal_group
 
         # Animation booleans
-        #TODO: create a self.animate_death variable and assign False to it.
-        #TODO: repeat for a self.animate_rise variable
+        self.animate_death = False
+        self.animate_rise = False
 
         # Load sounds
-        #TODO: create self.hit_sound and assign pygame.mixer.Sound() to it passing in "./assets/sounds/zombie_hit.wav")
-        #TODO: create self.kick_sound like the previous sound.  The file is located here "./assets/sounds/zombie_kick.wav")
-        #TODO: create self.portal_sound like the previous sound.  The file is located here "./assets/sounds/portal_sound.wav")
+        self.hit_sound = pygame.mixer.Sound("./assets/sounds/zombie_hit.wav")
+        self.kick_sound = pygame.mixer.Sound("./assets/sounds/zombie_kick.wav")
+        self.portal_sound = pygame.mixer.Sound("./assets/sounds/portal_sound.wav")
 
         # Kinematics vectors
-        #TODO: create a self.position variable and assign pygame.math.Vector2() to it passing in self.rect.x, self.rect.y
-        #TODO: create a self.velocity variable and assign pygame.math.Vector2() to it passing in self.direction * random.randint(min_speed, max_speed), 0
-        #TODO: create a self.acceleration variable and assign pygame.math.Vector2() to it passing in 0, self.VERTICAL_ACCELERATION.
+        self.position = pygame.math.Vector2(self.rect.x, self.rect.y)
+        self.velocity = pygame.math.Vector2(self.direction * random.randint(min_speed, max_speed), 0)
+        self.acceleration = pygame.math.Vector2(0, self.VERTICAL_ACCELERATION)
 
         # Intial zombie values
-        #TODO: create a self.is_dead variable and assign False to it.
-        #TODO: create a self.round_time variable and assign 0 to it.
-        #TODO: create a self.frame_count variable and assign 0 to it.
+        self.is_dead = False
+        self.round_time = 0
+        self.frame_count = 0
 
     def update(self):
         """Update the zombie"""
-        #TODO: call self.move(), self.check_collision(), and self.check_animations() all on their own lines.
+        self.move()
+        self.check_collisions()
+        self.check_animations()
 
         # Determine when the zombie should rise from the dead
         if self.is_dead:
@@ -198,15 +236,19 @@ class Zombie(pygame.sprite.Sprite):
 
     def move(self):
         """Move the zombie"""
-        #TODO: if not self.is_dead then do the following
-        #TODO: (1): check if self.direction is equal to -1 then call self.animate() passing in self.walk_left_sprites, and 0.5,
-        # else call self.animate passing in self.walk_right_sprites, and 0.5
-        #TODO: (2): add self.acceleration to self.velocity
-        #TODO: (3): add self.velocity + 0.5 * self.acceleration to self.position
-        #TODO: (4): check if self.position.x is negative then self.position.x = self.WINDOW_WIDTH,
-        # else if self.position.x is greater than self.WINDOW_WIDTH then assign 0 to self.position.x
-        #TODO: (5): assign self.position to self.rect.bottomleft
-
+        if not self.is_dead:
+            if self.direction == -1:
+                self.animate(self.walk_left_sprites, 0.5)
+            else:
+                self.animate(self.walk_right_sprites, 0.5)
+            self.velocity += self.acceleration
+            self.position += self.velocity + 0.5 * self.acceleration
+            if self.position.x < 0:
+                self.position.x = self.WINDOW_WIDTH
+            else:
+                if self.position.x > self.WINDOW_WIDTH:
+                    self.position.x = 0
+            self.rect.bottomleft = self.position
 
     def check_collisions(self):
         """Check for collisions with platforms and portals"""
@@ -236,22 +278,34 @@ class Zombie(pygame.sprite.Sprite):
     def check_animations(self):
         """Check to see if death/rise animations should run"""
         # Animate the zombie death
-        #TODO: if self.animate_death then do the following
-        #TODO: (1): if self.direction is 1 then call self.animate() passing in self.die_right_sprites, and 0.095,
-        # else call self.animate() passing in self.die_left_sprites, and 0.095.
+        if self.animate_death:
+            if self.direction == 1:
+                self.animate(self.die_right_sprites, 0.095)
+            else:
+                self.animate(self.die_left_sprites, 0.095)
 
         # Animate the zombie rise
-        #TODO: if self.animate_rise then do the following
-        #TODO: (1): if self.direction is 1 then call self.animate() passing in self.rise_right_sprites, and 0.095,
-        # else call self.animate() passing in self.rise_left_sprites, and 0.095.
+        if self.animate_rise:
+            if self.direction == 1:
+                self.animate(self.rise_right_sprites, 0.095)
+            else:
+                self.animate(self.rise_left_sprites, 0.095)
+
 
 
     def animate(self, sprite_list, speed):
         """Animate the zombie's actions"""
-        #TODO: if self.current_sprite is less than len(sprite_list) - 1 then add speed to self.current_sprite
-        #TODO: else do the following
-        #TODO: (1): assign 0 to self.current_sprite
-        #TODO: (2): if self.animate_death then assign len(sprite_list) - 1 to self.current_sprite, and self.animate_death = False
-        #TODO: (3): if self.animate_rise then assign False to self.animate_rise, assign False to self.is_dead, assign 0 to self.frame_count and self.round_time.
+        if self.current_sprite < len(sprite_list) - 1:
+            self.current_sprite += speed
+        else:
+            self.current_sprite = 0
+            if self.animate_death:
+                self.current_sprite = len(sprite_list) - 1
+                self.animate_death = False
+            if self.animate_rise:
+                self.animate_rise = False
+                self.is_dead = False
+                self.frame_count = 0
+                self.round_time = 0
 
         self.image = sprite_list[int(self.current_sprite)]
