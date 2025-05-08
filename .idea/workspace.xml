@@ -4,165 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d981c2a-872e-4d7b-b80c-504e605e6040" name="Changes" comment="3">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Pixel.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Poultrygeist.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (10).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (8).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/attack/Attack (9).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (10).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (8).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/idle/Idle (9).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (10).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (8).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/jump/Jump (9).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (10).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (8).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/run/Run (9).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/player/slash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile008.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile009.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile010.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile011.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile012.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile014.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile015.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile016.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile017.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile018.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile019.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile020.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/green/tile021.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile008.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile009.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile010.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile011.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile012.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile014.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile015.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile016.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile017.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile018.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile019.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile020.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/portals/purple/tile021.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ruby/tile000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ruby/tile001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ruby/tile002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ruby/tile003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ruby/tile004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ruby/tile005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ruby/tile006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tiles/Tile (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tiles/Tile (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tiles/Tile (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tiles/Tile (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tiles/Tile (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (10).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (8).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/dead/Dead (9).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (10).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (8).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/boy/walk/Walk (9).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (10).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (8).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/dead/Dead (9).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (10).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (8).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/zombie/girl/walk/Walk (9).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/jump_sound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/level_music.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/lost_ruby.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/player_hit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/portal_sound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/ruby_pickup.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/slash_sound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/zombie_hit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sounds/zombie_kick.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bullet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ruby.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ruby.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rubymaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/RubyMaker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zombie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zombie.py" afterDir="false" />
-    </list>
+    <list default="true" id="6d981c2a-872e-4d7b-b80c-504e605e6040" name="Changes" comment="5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,7 +87,7 @@
       <workItem from="1745839634508" duration="4262000" />
       <workItem from="1746011649235" duration="4530000" />
       <workItem from="1746530572633" duration="4709000" />
-      <workItem from="1746703337775" duration="2952000" />
+      <workItem from="1746703337775" duration="3792000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -271,7 +113,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746535399993</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4">
+      <option name="closed" value="true" />
+      <created>1746707020139</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746707020139</updated>
+    </task>
+    <task id="LOCAL-00005" summary="5">
+      <option name="closed" value="true" />
+      <created>1746707033714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746707033714</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +139,9 @@
     <MESSAGE value="first" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="4" />
+    <MESSAGE value="5" />
+    <option name="LAST_COMMIT_MESSAGE" value="5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Zombie$RubyMaker.coverage" NAME="RubyMaker Coverage Results" MODIFIED="1746705123800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
