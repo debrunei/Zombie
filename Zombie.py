@@ -51,7 +51,6 @@ class Zombie(pygame.sprite.Sprite):
             self.walk_right_sprites.append(pygame.transform.scale(pygame.image.load(
                 "assets/images/zombie/boy/walk/Walk (10).png"), (64, 64)))
 
-
             for sprite in self.walk_right_sprites:
                 self.walk_left_sprites.append(pygame.transform.flip(sprite, True, False))
 
@@ -101,7 +100,6 @@ class Zombie(pygame.sprite.Sprite):
                 "assets/images/zombie/boy/dead/Dead (2).png"), (64, 64)))
             self.rise_right_sprites.append(pygame.transform.scale(pygame.image.load(
                 "assets/images/zombie/boy/dead/Dead (1).png"), (64, 64)))
-
 
             for sprite in self.rise_right_sprites:
                 self.rise_left_sprites.append(pygame.transform.flip(sprite, True, False))
@@ -189,7 +187,6 @@ class Zombie(pygame.sprite.Sprite):
             self.walk_left_sprites[self.current_sprite] = self.image
         else:
             self.walk_right_sprites[self.current_sprite] = self.image
-
 
         self.rect = self.image.get_rect()
         self.rect.bottomleft = (random.randint(100, self.WINDOW_WIDTH - 100), -100)
@@ -290,8 +287,6 @@ class Zombie(pygame.sprite.Sprite):
                 self.animate(self.rise_right_sprites, 0.095)
             else:
                 self.animate(self.rise_left_sprites, 0.095)
-
-
 
     def animate(self, sprite_list, speed):
         """Animate the zombie's actions"""

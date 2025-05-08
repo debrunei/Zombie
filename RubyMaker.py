@@ -31,7 +31,7 @@ class RubyMaker(pygame.sprite.Sprite):
         self.current_sprite = 0
         self.image = self.ruby_sprites[self.current_sprite]
         self.rect = self.image.get_rect()
-        self.rect.bottemleft = (x, y)
+        self.rect.bottomleft = (x, y)
 
         #Add to the main group for drawing purposes
         main_group.add(self)

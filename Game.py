@@ -5,7 +5,7 @@ import pygame
 from Player import Player
 from Portal import Portal
 from Ruby import Ruby
-from Rubymaker import RubyMaker
+from RubyMaker import RubyMaker
 from Tile import Tile
 from Zombie import Zombie
 
@@ -356,32 +356,34 @@ class Game:
         pygame.display.update()
 
         # Pause the game until user hits enter or quits
-        # TODO: assign True to is_paused
-        # TODO: while is_paused
-        # TODO: (1): for each event in pygame.event.get()
-        # TODO: (1-1): check if the event.type is pygame.KEYDOWN
-        # TODO: (1-1-1): check if event.key is pygame.K_RETURN
-        # TODO: (1-1-1-1): assign False to is_paused
-        # TODO: (1-1-1-2): call pygame.mixer.music.unpause()
-        # TODO: (1-2): check if event.type is pygame.QUIT
-        # TODO: (1-2-1): assign False to is_paused
-        # TODO: (1-2-2): assign False to self.running
-        # TODO: (1-2-3): call pygame.mixer.music.stop()
-
+        is_paused = True
+        while is_paused:
+            for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_RETURN:
+                        is_paused = False
+                        pygame.mixer.music.unpause()
+                elif event.type == pygame.QUIT:
+                    is_paused = False
+                    self.running = False
+                    pygame.mixer.music.stop()
 
     def reset_game(self):
         """Reset the game"""
         # Reset game values
-        # TODO: assign the following to these self variables
-        # 0 to score, 1 to round_number, self.STARTING_ROUND_TIME to round_time
-        # self.STARTING_ZOMBIE_CREATION_TIME to zombie_creation_time,
+        self.score = 0
+        self.round_number = 1
+        self.round_time = self.STARTING_ROUND_TIME
+        self.zombie_creation_time = self.STARTING_ZOMBIE_CREATION_TIME
 
         # Reset the player
-        # TODO: assign self.my_player.STARTING_HEALTH to self.my_player.health
-        # TODO: call self.my_player.reset()
+        self.my_player.health = self.my_player.STARTING_HEALTH
+        self.my_player.reset()
+
 
         # Empty sprite groups
-        #TODO: call .empty() on the following sprite groups
-        # zombie_group, ruby_group, bullet_group
+        self.zombie_group.empty()
+        self.ruby_group.empty()
+        self.bullet_group.empty()
 
-        # TODO: call pygame.mixer.music.play() passing in -1, and 0.0
+        pygame.mixer.music.play(-1, 0.0)

@@ -154,7 +154,7 @@ class Player(pygame.sprite.Sprite):
 
         #Kinematics vectors
         self.position = pygame.math.Vector2(x, y)
-        self.velocity - pygame.math.Vector2(0, 0)
+        self.velocity = pygame.math.Vector2(0, 0)
         self.acceleration = pygame.math.Vector2(0, self.VERTICAL_ACCELERATION)
 
         #Set initial player values

@@ -53,7 +53,7 @@ class Ruby(pygame.sprite.Sprite):
 
     def update(self):
         """Update the ruby"""
-        self.animate(self.ruby_sprites and 0.25)
+        self.animate(self.ruby_sprites, 0.25)
         self.move()
         self.check_collisions()
 
