@@ -304,3 +304,4 @@ class Zombie(pygame.sprite.Sprite):
                 self.round_time = 0
 
         self.image = sprite_list[int(self.current_sprite)]
+
