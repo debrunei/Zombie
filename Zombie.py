@@ -184,9 +184,9 @@ class Zombie(pygame.sprite.Sprite):
 
         self.current_sprite = 0
         if self.direction == -1:
-            self.walk_left_sprites[self.current_sprite] = self.image
+            self.image = self.walk_left_sprites[self.current_sprite]
         else:
-            self.walk_right_sprites[self.current_sprite] = self.image
+            self.image = self.walk_right_sprites[self.current_sprite]
 
         self.rect = self.image.get_rect()
         self.rect.bottomleft = (random.randint(100, self.WINDOW_WIDTH - 100), -100)
@@ -214,6 +214,7 @@ class Zombie(pygame.sprite.Sprite):
         self.round_time = 0
         self.frame_count = 0
 
+
     def update(self):
         """Update the zombie"""
         self.move()
@@ -231,6 +232,7 @@ class Zombie(pygame.sprite.Sprite):
                     # When it rises, we want to start at index 0 of our rise_sprite lists
                     self.current_sprite = 0
 
+
     def move(self):
         """Move the zombie"""
         if not self.is_dead:
@@ -246,6 +248,7 @@ class Zombie(pygame.sprite.Sprite):
                 if self.position.x > self.WINDOW_WIDTH:
                     self.position.x = 0
             self.rect.bottomleft = self.position
+
 
     def check_collisions(self):
         """Check for collisions with platforms and portals"""
@@ -272,6 +275,7 @@ class Zombie(pygame.sprite.Sprite):
 
             self.rect.bottomleft = self.position
 
+
     def check_animations(self):
         """Check to see if death/rise animations should run"""
         # Animate the zombie death
@@ -287,6 +291,7 @@ class Zombie(pygame.sprite.Sprite):
                 self.animate(self.rise_right_sprites, 0.095)
             else:
                 self.animate(self.rise_left_sprites, 0.095)
+
 
     def animate(self, sprite_list, speed):
         """Animate the zombie's actions"""
@@ -304,4 +309,3 @@ class Zombie(pygame.sprite.Sprite):
                 self.round_time = 0
 
         self.image = sprite_list[int(self.current_sprite)]
-

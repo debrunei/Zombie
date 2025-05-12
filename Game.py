@@ -253,8 +253,8 @@ class Game:
         # Check to add a zombie every second
         if self.frame_count % Game.FPS == 0:
             if self.round_time % self.zombie_creation_time == 0:
-                zombie = Zombie(self.platform_group, self.portal_group, self.round_number + 5, self.WINDOW_WIDTH, self.WINDOW_HEIGHT, self.FPS)
-        self.zombie_group.add(zombie)
+                zombie = Zombie(self.platform_group, self.portal_group, self.round_number, self.round_number + 5, Game.WINDOW_WIDTH, Game.WINDOW_HEIGHT, Game.FPS)
+                self.zombie_group.add(zombie)
 
     def check_collisions(self):
         """Check collisions that affect gameplay"""
@@ -340,12 +340,12 @@ class Game:
         pygame.mixer.music.pause()
 
         # Create main pause text
-        self.title_font.render(main_text, True, Game.GREEN)
+        main_text = self.title_font.render(main_text, True, Game.GREEN)
         main_rect = main_text.get_rect()
         main_rect.center = (Game.WINDOW_WIDTH // 2, Game.WINDOW_HEIGHT // 2)
 
         #Create sub pause text
-        self.title_font.render(sub_text, True, Game.WHITE)
+        sub_text = self.title_font.render(sub_text, True, Game.WHITE)
         sub_rect = sub_text.get_rect()
         sub_rect.center = (Game.WINDOW_WIDTH // 2, Game.WINDOW_HEIGHT // 2 + 64)
 

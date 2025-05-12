@@ -29,7 +29,7 @@ class Bullet(pygame.sprite.Sprite):
     def update(self):
         """Update the bullet"""
         # NOTE NOTE NOTE THIS:  When I say add to y the value of x this means y += x or y = y + x
-        self.VELOCITY += self.rect.x
+        self.rect.x += self.VELOCITY
 
         #If the bullet has passed the range, kill it
         if abs(self.rect.x - self.starting_x) > self.RANGE:
